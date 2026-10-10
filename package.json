@@ -1,0 +1,11 @@
+{
+  "name": "laundry-platform",
+  "version": "1.0.0",
+  "description": "Two-sided laundry and dry-cleaning marketplace for Kano, Nigeria",
+  "scripts": {
+    "server": "npm --prefix server start",
+    "client": "npm --prefix client dev",
+    "db:migrate": "npm --prefix server run db:migrate",
+    "db:seed": "npm --prefix server run db:seed"
+  }
+}

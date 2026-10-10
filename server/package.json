@@ -1,0 +1,24 @@
+{
+  "name": "laundry-platform-server",
+  "version": "1.0.0",
+  "description": "Backend API for Kano Laundry Marketplace Platform",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js",
+    "db:migrate": "node src/db/migrate.js",
+    "db:seed": "node src/db/seed.js",
+    "create-admin": "node src/db/create-admin.js",
+    "test": "node test/workflow.test.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.13.1",
+    "pg-mem": "^3.0.4"
+  }
+}
